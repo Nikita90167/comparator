@@ -1,25 +1,28 @@
 public class Person {
-    private String name;
-    private String surname;
-    private int age;
+    private final String name;
+    private final String surname;
+    private final int age;
 
-    public Person (String name, String surname, int age) {
+    public Person(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
     }
-    String getName () {
+
+    String getName() {
         return name;
     }
-    String getSurname () {
+
+    String getSurname() {
         return surname;
     }
-    int getAge () {
+
+    int getAge() {
         return age;
     }
 
     @Override
     public String toString() {
-        return "Имя: " + name + " фамилия: " + surname + " возраст: " + age;
+        return " { " + "Имя: " + name + " фамилия: " + surname + " возраст: " + age + " } ";
     }
 }
