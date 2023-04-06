@@ -3,6 +3,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 
+
 public class Main {
     public static void main(String[] args) {
         Comparator<Person> comparatorLambda;
@@ -31,6 +32,7 @@ public class Main {
         System.out.println(people);
         Predicate<Person> comparison;
         people.removeIf(comparison = (person) -> person.getAge() < 18);
+        people.sort(comparatorLambda);
         System.out.println(people);
 
     }
